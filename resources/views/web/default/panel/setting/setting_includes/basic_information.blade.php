@@ -51,9 +51,7 @@
                     {{ $message }}
                 </div>
                 @enderror
-            </div>
-
-            
+            </div>  
 
             <div class="form-group mt-30 d-flex align-items-center justify-content-between">
                 <label class="cursor-pointer input-label" for="newsletterSwitch">{{ trans('auth.join_newsletter') }}</label>
