@@ -53,19 +53,7 @@
                 @enderror
             </div>
 
-            <div class="form-group">
-                <label class="input-label">{{ trans('auth.language') }}</label>
-                <select name="language" class="form-control">
-                    @foreach($userLanguages as $lang => $language)
-                        <option value="{{ $lang }}" @if(!empty($user) and $user->language == $lang) selected @endif>{{ $language }}</option>
-                    @endforeach
-                </select>
-                @error('language')
-                <div class="invalid-feedback">
-                    {{ $message }}
-                </div>
-                @enderror
-            </div>
+            
 
             <div class="form-group mt-30 d-flex align-items-center justify-content-between">
                 <label class="cursor-pointer input-label" for="newsletterSwitch">{{ trans('auth.join_newsletter') }}</label>
